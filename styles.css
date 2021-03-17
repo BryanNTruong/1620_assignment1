@@ -34,3 +34,25 @@ a:link {
     text-decoration: none;
 }
 
+.create_note{
+    padding-top: 140px;
+    padding-left: 350px;
+}
+
+.slider_menu > button{
+    background-color:#f2e9de;
+    color: #286983;
+    border: none;
+    font-size: 20px;
+}
+
+.create_note > button{
+    background-color:#f2e9de;
+    color: #286983;
+    border: none;
+    font-size: 20px;
+}
+
+#note{
+    word-spacing: 2px;
+}
