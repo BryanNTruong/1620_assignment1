@@ -85,7 +85,7 @@ footer > p{
     border: none;
     padding: 20px;
     float: right;
-    font-size: 20px;
+    font-size: 30px;
 } 
 
 .slide_out_menu > h3{
@@ -113,4 +113,17 @@ footer > p{
     grid-area: header;
     text-align: right;
     padding-right: 20px;
+}
+
+.box{
+    padding: 100px;
+}
+
+.box > .note_body{
+    grid-area: main;
+    color: #9893a5;
+    width: 600px;
+    height: 400px;
+    background-color: #faf4ed;
+    border: none;
 }
