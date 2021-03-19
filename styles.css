@@ -50,7 +50,6 @@ a:link {
     color: #286983;
     border: none;
     font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 #note{
@@ -96,7 +95,6 @@ footer > p{
     padding-left: 80px;
     padding-top: 75px;
     color: #907aa9;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .wrapper > .slide_out_menu > ul{
@@ -193,9 +191,11 @@ footer > p{
         width: 100vw;
         height: 100vh;
     }
+
     .wrapper > .box{
         padding: 30px;
     }
+
     .wrapper > .box > .note_body{
         grid-area: main;
         color: #9893a5;
@@ -204,6 +204,7 @@ footer > p{
         background-color: #faf4ed;
         border: none;
     }
+
     .wrapper > .slide_out_menu > button{
         background-color: #faf4ed;
         color: #286983;
@@ -240,9 +241,11 @@ footer > p{
         padding-right: 20px;
         word-spacing: 5px;
     }
+    
     .wrapper > .box > .position_save_delete{
         padding-left : 200px;    
     }
+
     .wrapper > .footer{
         text-align: left;
     }
