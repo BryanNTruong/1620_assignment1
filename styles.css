@@ -4,12 +4,9 @@ html, body{
     padding: 0;
     margin: 0;
     background-color: #f2e9de;
-}
-
-body{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 header{
@@ -63,8 +60,8 @@ footer > p{
 
 .wrapper{
     display: grid;
-    grid-template-rows: 5rem 1fr 5rem;
-    grid-template-columns: 250px 1fr;
+    grid-template-rows: 5rem 1fr 5rem; 
+    grid-template-columns: 250px 1fr;  
     grid-template-areas: 
         'sidebar header header'
         'sidebar main main'
@@ -74,12 +71,12 @@ footer > p{
     height: 100vh;
 }
 
-.slide_out_menu{
+.wrapper > .slide_out_menu{
     grid-area: sidebar;
     background-color: #faf4ed;
 }
 
- .slide_out_menu > button{
+.wrapper > .slide_out_menu > button{
     background-color: #faf4ed;
     color: #286983;
     border: none;
@@ -88,22 +85,22 @@ footer > p{
     font-size: 30px;
 } 
 
-.slide_out_menu > h3{
+.wrapper > .slide_out_menu > h3{
     padding-left: 80px;
     padding-top: 75px;
     color: #907aa9;
 }
 
-.slide_out_menu > ul{
+.wrapper > .slide_out_menu > ul{
     list-style-type: none;
     padding-left: 75px;
 }
 
-.slide_out_menu > ul > li{
+.wrapper > .slide_out_menu > ul > li{
     padding: 8px;
 }
 
-.slide_out_menu > ul > li > button{
+.wrapper > .slide_out_menu > ul > li > button{
     background-color: #faf4ed;
     color: #286983;
     border: none;
@@ -157,9 +154,81 @@ footer > p{
 .wrapper > .footer{
     grid-area: footer;
     text-align: center;
-    bottom: 10px;
 }
 .wrapper > .footer > p{
     color: #286983;
     vertical-align: text-bottom;
 }
+
+ @media screen and (max-width: 600px) and (max-height: 860px){
+    .create_note{
+        padding-top: 140px;
+        padding-left: 200px;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-rows: 5rem 1fr 5rem;
+        grid-template-columns: 75px 1fr;
+        grid-template-areas: 
+            'sidebar header header'
+            'sidebar main main'
+            'sidebar footer footer ';  
+        gap: 5px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .wrapper > .box{
+        padding: 30px;
+    }
+    .wrapper > .box > .note_body{
+        grid-area: main;
+        color: #9893a5;
+        width: 200px;
+        height: 200px;
+        background-color: #faf4ed;
+        border: none;
+    }
+    .wrapper > .slide_out_menu > button{
+        background-color: #faf4ed;
+        color: #286983;
+        border: none;
+        padding: 20px;
+        float: right;
+        font-size: 30px;
+    } 
+    
+    .wrapper > .slide_out_menu > h3{
+        padding-left: 20px;
+        padding-top: 75px;
+        color: #907aa9;
+    }
+    
+    .wrapper > .slide_out_menu > ul{
+        list-style-type: none;
+        padding-left: 5px;
+    }
+    
+    .wrapper > .slide_out_menu > ul > li{
+        padding: 2px;
+    }
+    
+    .wrapper > .slide_out_menu > ul > li > button{
+        background-color: #faf4ed;
+        color: #286983;
+        border: none;
+    }
+    
+    .wrapper > .about{
+        text-align:left;
+        grid-area: header;
+        padding-right: 20px;
+        word-spacing: 5px;
+    }
+    .wrapper > .box > .position_save_delete{
+        padding-left : 200px;    
+    }
+    .wrapper > .footer{
+        text-align: left;
+    }
+}  
